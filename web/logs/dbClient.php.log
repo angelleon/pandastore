@@ -1,0 +1,940 @@
+[2020-02-27T11:26:50.865703-06:00] dbClient.php.DEBUG:   
+[2020-02-27T11:26:50.865961-06:00] dbClient.php.DEBUG: 2020-02-27 11:26:50.847710 nusoap_client: ctor wsdl=wsdl timeout=0 response_timeout=30
+endpoint=string(56) "http://localhost/panda-store/services/dbService.php?wsdl"
+2020-02-27 11:26:50.847762 nusoap_client: will use lazy evaluation of wsdl from http://localhost/panda-store/services/dbService.php?wsdl
+2020-02-27 11:26:50.847779 nusoap_client: call: operation=GET, namespace=uri:http://localhost/panda-store/services/dbService.php, soapAction=, rpcParams=, style=rpc, use=encoded, endpointType=wsdl
+params=array(1) {
+  ["statement"]=>
+  array(6) {
+    ["instruction"]=>
+    array(1) {
+      ["code"]=>
+      int(0)
+    }
+    ["tables"]=>
+    array(1) {
+      ["table"]=>
+      array(2) {
+        [0]=>
+        string(7) "product"
+        [1]=>
+        string(5) "users"
+      }
+    }
+    ["columns"]=>
+    array(2) {
+      [0]=>
+      string(6) "idUser"
+      [1]=>
+      string(12) "dateModified"
+    }
+    ["conditionalColumns"]=>
+    array(1) {
+      ["column"]=>
+      string(6) "idUser"
+    }
+    ["conditionalOperators"]=>
+    array(1) {
+      ["operator"]=>
+      string(1) "="
+    }
+    ["conditionalValues"]=>
+    array(1) {
+      ["value"]=>
+      string(1) "1"
+    }
+  }
+}
+headers=bool(false)
+2020-02-27 11:26:50.847820 nusoap_client: instantiating wsdl class with doc: http://localhost/panda-store/services/dbService.php?wsdl
+2020-02-27 11:26:50.851755 wsdl: ctor wsdl= timeout=0 response_timeout=30
+2020-02-27 11:26:50.851818 wsdl: parse and process WSDL path=
+2020-02-27 11:26:50.851856 wsdl: setCredentials username= authtype= certRequest=
+array(0) {
+}
+2020-02-27 11:26:50.851896 wsdl: parse and process WSDL path=http://localhost/panda-store/services/dbService.php?wsdl
+2020-02-27 11:26:50.851921 wsdl: parse WSDL at path=http://localhost/panda-store/services/dbService.php?wsdl
+2020-02-27 11:26:50.851950 wsdl: getting WSDL http(s) URL http://localhost/panda-store/services/dbService.php?wsdl
+2020-02-27 11:26:50.854363 soap_transport_http: ctor url=http://localhost/panda-store/services/dbService.php?wsdl use_curl= curl_options:
+array(0) {
+}
+2020-02-27 11:26:50.854426 soap_transport_http: parsed URL scheme = http
+2020-02-27 11:26:50.854441 soap_transport_http: parsed URL host = localhost
+2020-02-27 11:26:50.854455 soap_transport_http: parsed URL path = /panda-store/services/dbService.php
+2020-02-27 11:26:50.854468 soap_transport_http: parsed URL query = wsdl
+2020-02-27 11:26:50.854489 soap_transport_http: set header Host: localhost
+2020-02-27 11:26:50.854703 soap_transport_http: set header User-Agent: NuSOAP/0.9.5 (1.56)
+2020-02-27 11:26:50.854743 soap_transport_http: set header Accept-Encoding: gzip, deflate
+2020-02-27 11:26:50.854763 soap_transport_http: set header Connection: close
+2020-02-27 11:26:50.854787 soap_transport_http: entered send() with data of length: 0
+2020-02-27 11:26:50.854821 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host localhost, port 80
+2020-02-27 11:26:50.854844 soap_transport_http: calling fsockopen with host localhost connection_timeout 0
+2020-02-27 11:26:50.855708 soap_transport_http: set response timeout to 30
+2020-02-27 11:26:50.855737 soap_transport_http: socket connected
+2020-02-27 11:26:50.855759 soap_transport_http: HTTP request: GET /panda-store/services/dbService.php?wsdl HTTP/1.1
+2020-02-27 11:26:50.855779 soap_transport_http: HTTP header: Host: localhost
+2020-02-27 11:26:50.855792 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.9.5 (1.56)
+2020-02-27 11:26:50.855805 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2020-02-27 11:26:50.855817 soap_transport_http: HTTP header: Connection: close
+2020-02-27 11:26:50.855890 soap_transport_http: wrote data to socket, length = 158
+2020-02-27 11:26:50.858905 soap_transport_http: read line of 17 bytes: HTTP/1.1 200 OK
+2020-02-27 11:26:50.858955 soap_transport_http: read line of 37 bytes: Date: Thu, 27 Feb 2020 17:26:50 GMT
+2020-02-27 11:26:50.858969 soap_transport_http: read line of 32 bytes: Server: Apache/2.4.29 (Ubuntu)
+2020-02-27 11:26:50.858984 soap_transport_http: read line of 23 bytes: Vary: Accept-Encoding
+2020-02-27 11:26:50.858997 soap_transport_http: read line of 24 bytes: Content-Encoding: gzip
+2020-02-27 11:26:50.859011 soap_transport_http: read line of 21 bytes: Content-Length: 902
+2020-02-27 11:26:50.859024 soap_transport_http: read line of 19 bytes: Connection: close
+2020-02-27 11:26:50.859037 soap_transport_http: read line of 44 bytes: Content-Type: text/xml; charset=ISO-8859-1
+2020-02-27 11:26:50.859052 soap_transport_http: read line of 2 bytes: 
+2020-02-27 11:26:50.859141 soap_transport_http: found end of headers after length 219
+2020-02-27 11:26:50.859190 soap_transport_http: want to read content of length 902
+2020-02-27 11:26:50.859213 soap_transport_http: read buffer of 902 bytes
+2020-02-27 11:26:50.859231 soap_transport_http: read to EOF
+2020-02-27 11:26:50.859245 soap_transport_http: read body of length 902
+2020-02-27 11:26:50.859259 soap_transport_http: received a total of 1121 bytes of data from server
+2020-02-27 11:26:50.859305 soap_transport_http: closed socket
+2020-02-27 11:26:50.859327 soap_transport_http: The gzinflate function exists
+2020-02-27 11:26:50.859415 soap_transport_http: The payload has been un-gzipped to 5091 bytes
+2020-02-27 11:26:50.859433 soap_transport_http: end of send()
+2020-02-27 11:26:50.859461 wsdl: got WSDL URL
+2020-02-27 11:26:50.859474 wsdl: Parse WSDL
+2020-02-27 11:26:50.859704 wsdl: Parsing WSDL schema
+2020-02-27 11:26:50.861425 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2020-02-27 11:26:50.861486 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> import namespace http://schemas.xmlsoap.org/soap/encoding/
+2020-02-27 11:26:50.861517 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> import namespace http://schemas.xmlsoap.org/wsdl/
+2020-02-27 11:26:50.861542 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType stdMessage
+2020-02-27 11:26:50.861573 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element code of type http://www.w3.org/2001/XMLSchema:int
+2020-02-27 11:26:50.861588 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element code to complexType stdMessage
+2020-02-27 11:26:50.861606 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element code
+2020-02-27 11:26:50.861627 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element msg of type http://www.w3.org/2001/XMLSchema:string
+2020-02-27 11:26:50.861642 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element msg to complexType stdMessage
+2020-02-27 11:26:50.861659 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element msg
+2020-02-27 11:26:50.861678 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType stdMessage
+2020-02-27 11:26:50.861714 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(10) "stdMessage"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(2) {
+    ["code"]=>
+    array(3) {
+      ["name"]=>
+      string(4) "code"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["msg"]=>
+    array(3) {
+      ["name"]=>
+      string(3) "msg"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.861733 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType tDbCode
+2020-02-27 11:26:50.861760 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element code of type http://www.w3.org/2001/XMLSchema:int
+2020-02-27 11:26:50.861775 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element code to complexType tDbCode
+2020-02-27 11:26:50.861791 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element code
+2020-02-27 11:26:50.861809 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType tDbCode
+2020-02-27 11:26:50.861831 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(7) "tDbCode"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["code"]=>
+    array(3) {
+      ["name"]=>
+      string(4) "code"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.861850 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType tDbTables
+2020-02-27 11:26:50.861876 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element table of type http://www.w3.org/2001/XMLSchema:string
+2020-02-27 11:26:50.861890 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element table to complexType tDbTables
+2020-02-27 11:26:50.861907 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element table
+2020-02-27 11:26:50.861925 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType tDbTables
+2020-02-27 11:26:50.861946 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(9) "tDbTables"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(1) {
+    ["table"]=>
+    array(3) {
+      ["name"]=>
+      string(5) "table"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.861964 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType tDbColumns
+2020-02-27 11:26:50.861988 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element column of type http://www.w3.org/2001/XMLSchema:string
+2020-02-27 11:26:50.862002 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element column to complexType tDbColumns
+2020-02-27 11:26:50.862018 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element column
+2020-02-27 11:26:50.862036 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType tDbColumns
+2020-02-27 11:26:50.862057 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(10) "tDbColumns"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["column"]=>
+    array(3) {
+      ["name"]=>
+      string(6) "column"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.862075 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType tDbConditionalOperators
+2020-02-27 11:26:50.862100 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element operator of type http://www.w3.org/2001/XMLSchema:string
+2020-02-27 11:26:50.862114 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element operator to complexType tDbConditionalOperators
+2020-02-27 11:26:50.862130 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element operator
+2020-02-27 11:26:50.862148 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType tDbConditionalOperators
+2020-02-27 11:26:50.862169 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(23) "tDbConditionalOperators"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["operator"]=>
+    array(3) {
+      ["name"]=>
+      string(8) "operator"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.862187 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType tDbConditionalValues
+2020-02-27 11:26:50.862210 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element value of type http://www.w3.org/2001/XMLSchema:string
+2020-02-27 11:26:50.862224 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element value to complexType tDbConditionalValues
+2020-02-27 11:26:50.862240 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element value
+2020-02-27 11:26:50.862258 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType tDbConditionalValues
+2020-02-27 11:26:50.862279 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(20) "tDbConditionalValues"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["value"]=>
+    array(3) {
+      ["name"]=>
+      string(5) "value"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.862296 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing named complexType dbStatement
+2020-02-27 11:26:50.862321 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element instruction of type http://localhost/panda-store/services/dbService.php:tDbCode
+2020-02-27 11:26:50.862335 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element instruction to complexType dbStatement
+2020-02-27 11:26:50.862351 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element instruction
+2020-02-27 11:26:50.862373 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element tables of type http://localhost/panda-store/services/dbService.php:tDbTables[]
+2020-02-27 11:26:50.862387 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element tables to complexType dbStatement
+2020-02-27 11:26:50.862403 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element tables
+2020-02-27 11:26:50.862422 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element columns of type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.862436 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element columns to complexType dbStatement
+2020-02-27 11:26:50.862452 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element columns
+2020-02-27 11:26:50.862472 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element conditionalColumns of type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.862485 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element conditionalColumns to complexType dbStatement
+2020-02-27 11:26:50.862501 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element conditionalColumns
+2020-02-27 11:26:50.862521 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element conditionalOperators of type http://localhost/panda-store/services/dbService.php:tDbConditionalOperators
+2020-02-27 11:26:50.862535 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element conditionalOperators to complexType dbStatement
+2020-02-27 11:26:50.862551 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element conditionalOperators
+2020-02-27 11:26:50.862570 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> processing typed element conditionalValues of type http://localhost/panda-store/services/dbService.php:tDbConditionalValues
+2020-02-27 11:26:50.862584 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> add element conditionalValues to complexType dbStatement
+2020-02-27 11:26:50.862600 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing element conditionalValues
+2020-02-27 11:26:50.862617 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> done processing complexType dbStatement
+2020-02-27 11:26:50.862652 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> array(6) {
+  ["name"]=>
+  string(11) "dbStatement"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(6) {
+    ["instruction"]=>
+    array(3) {
+      ["name"]=>
+      string(11) "instruction"
+      ["type"]=>
+      string(59) "http://localhost/panda-store/services/dbService.php:tDbCode"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["tables"]=>
+    array(5) {
+      ["name"]=>
+      string(6) "tables"
+      ["type"]=>
+      string(63) "http://localhost/panda-store/services/dbService.php:tDbTables[]"
+      ["minOccurs"]=>
+      string(1) "1"
+      ["maxOccurs"]=>
+      string(9) "unbounded"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["columns"]=>
+    array(3) {
+      ["name"]=>
+      string(7) "columns"
+      ["type"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:tDbColumns"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalColumns"]=>
+    array(3) {
+      ["name"]=>
+      string(18) "conditionalColumns"
+      ["type"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:tDbColumns"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalOperators"]=>
+    array(3) {
+      ["name"]=>
+      string(20) "conditionalOperators"
+      ["type"]=>
+      string(75) "http://localhost/panda-store/services/dbService.php:tDbConditionalOperators"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalValues"]=>
+    array(3) {
+      ["name"]=>
+      string(17) "conditionalValues"
+      ["type"]=>
+      string(72) "http://localhost/panda-store/services/dbService.php:tDbConditionalValues"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2020-02-27 11:26:50.862672 wsdl: Parsing WSDL schema done
+2020-02-27 11:26:50.862705 wsdl: msg GETRequest: found part (with type) statement: statement,http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.862732 wsdl: msg GETResponse: found part (with type) return: return,http://localhost/panda-store/services/dbService.php:stdMessage
+2020-02-27 11:26:50.862783 wsdl: portType WSDLTSTPortType operation: GET
+2020-02-27 11:26:50.862816 wsdl: portType WSDLTSTPortType operation: POST
+2020-02-27 11:26:50.862848 wsdl: portType WSDLTSTPortType operation: PATCH
+2020-02-27 11:26:50.862878 wsdl: portType WSDLTSTPortType operation: DELETE
+2020-02-27 11:26:50.862914 wsdl: current binding: WSDLTSTBinding of portType: http://localhost/panda-store/services/dbService.php:WSDLTSTPortType
+2020-02-27 11:26:50.862962 wsdl: current binding operation: GET
+2020-02-27 11:26:50.863014 wsdl: current binding operation: POST
+2020-02-27 11:26:50.863063 wsdl: current binding operation: PATCH
+2020-02-27 11:26:50.863111 wsdl: current binding operation: DELETE
+2020-02-27 11:26:50.863178 wsdl: current service: WSDLTST
+2020-02-27 11:26:50.863200 wsdl: current port: WSDLTSTPort
+2020-02-27 11:26:50.863237 wsdl: Parsing WSDL done
+2020-02-27 11:26:50.863266 wsdl: post-parse data gathering for GET
+2020-02-27 11:26:50.863288 wsdl: post-parse data gathering for POST
+2020-02-27 11:26:50.863307 wsdl: post-parse data gathering for PATCH
+2020-02-27 11:26:50.863325 wsdl: post-parse data gathering for DELETE
+2020-02-27 11:26:50.863363 nusoap_client: checkWSDL
+2020-02-27 11:26:50.863380 wsdl: getOperations for port '' bindingType http://schemas.xmlsoap.org/wsdl/soap/
+2020-02-27 11:26:50.863395 wsdl: getOperations checking port WSDLTSTPort bindingType http://schemas.xmlsoap.org/wsdl/soap/
+2020-02-27 11:26:50.863409 wsdl: getOperations found port WSDLTSTPort bindingType http://schemas.xmlsoap.org/wsdl/soap/
+2020-02-27 11:26:50.863428 nusoap_client: got 4 operations from wsdl http://localhost/panda-store/services/dbService.php?wsdl for binding type soap
+2020-02-27 11:26:50.863448 nusoap_client: found operation
+opData=array(9) {
+  ["name"]=>
+  string(3) "GET"
+  ["binding"]=>
+  string(14) "WSDLTSTBinding"
+  ["endpoint"]=>
+  string(51) "http://localhost/panda-store/services/dbService.php"
+  ["soapAction"]=>
+  string(55) "http://localhost/panda-store/services/dbService.php/GET"
+  ["style"]=>
+  string(3) "rpc"
+  ["input"]=>
+  array(5) {
+    ["use"]=>
+    string(7) "encoded"
+    ["namespace"]=>
+    string(51) "http://localhost/panda-store/services/dbService.php"
+    ["encodingStyle"]=>
+    string(41) "http://schemas.xmlsoap.org/soap/encoding/"
+    ["message"]=>
+    string(10) "GETRequest"
+    ["parts"]=>
+    array(1) {
+      ["statement"]=>
+      string(63) "http://localhost/panda-store/services/dbService.php:dbStatement"
+    }
+  }
+  ["output"]=>
+  array(5) {
+    ["use"]=>
+    string(7) "encoded"
+    ["namespace"]=>
+    string(51) "http://localhost/panda-store/services/dbService.php"
+    ["encodingStyle"]=>
+    string(41) "http://schemas.xmlsoap.org/soap/encoding/"
+    ["message"]=>
+    string(11) "GETResponse"
+    ["parts"]=>
+    array(1) {
+      ["return"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:stdMessage"
+    }
+  }
+  ["transport"]=>
+  string(36) "http://schemas.xmlsoap.org/soap/http"
+  ["documentation"]=>
+  string(0) ""
+}
+2020-02-27 11:26:50.863493 nusoap_client: serializing param array for WSDL operation GET
+2020-02-27 11:26:50.863508 wsdl: in serializeRPCParameters: operation=GET, direction=input, XMLSchemaVersion=http://www.w3.org/2001/XMLSchema, bindingType=soap
+parameters=array(1) {
+  ["statement"]=>
+  array(6) {
+    ["instruction"]=>
+    array(1) {
+      ["code"]=>
+      int(0)
+    }
+    ["tables"]=>
+    array(1) {
+      ["table"]=>
+      array(2) {
+        [0]=>
+        string(7) "product"
+        [1]=>
+        string(5) "users"
+      }
+    }
+    ["columns"]=>
+    array(2) {
+      [0]=>
+      string(6) "idUser"
+      [1]=>
+      string(12) "dateModified"
+    }
+    ["conditionalColumns"]=>
+    array(1) {
+      ["column"]=>
+      string(6) "idUser"
+    }
+    ["conditionalOperators"]=>
+    array(1) {
+      ["operator"]=>
+      string(1) "="
+    }
+    ["conditionalValues"]=>
+    array(1) {
+      ["value"]=>
+      string(1) "1"
+    }
+  }
+}
+2020-02-27 11:26:50.863540 wsdl: in serializeRPCParameters: opData:
+array(9) {
+  ["name"]=>
+  string(3) "GET"
+  ["binding"]=>
+  string(14) "WSDLTSTBinding"
+  ["endpoint"]=>
+  string(51) "http://localhost/panda-store/services/dbService.php"
+  ["soapAction"]=>
+  string(55) "http://localhost/panda-store/services/dbService.php/GET"
+  ["style"]=>
+  string(3) "rpc"
+  ["input"]=>
+  array(5) {
+    ["use"]=>
+    string(7) "encoded"
+    ["namespace"]=>
+    string(51) "http://localhost/panda-store/services/dbService.php"
+    ["encodingStyle"]=>
+    string(41) "http://schemas.xmlsoap.org/soap/encoding/"
+    ["message"]=>
+    string(10) "GETRequest"
+    ["parts"]=>
+    array(1) {
+      ["statement"]=>
+      string(63) "http://localhost/panda-store/services/dbService.php:dbStatement"
+    }
+  }
+  ["output"]=>
+  array(5) {
+    ["use"]=>
+    string(7) "encoded"
+    ["namespace"]=>
+    string(51) "http://localhost/panda-store/services/dbService.php"
+    ["encodingStyle"]=>
+    string(41) "http://schemas.xmlsoap.org/soap/encoding/"
+    ["message"]=>
+    string(11) "GETResponse"
+    ["parts"]=>
+    array(1) {
+      ["return"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:stdMessage"
+    }
+  }
+  ["transport"]=>
+  string(36) "http://schemas.xmlsoap.org/soap/http"
+  ["documentation"]=>
+  string(0) ""
+}
+2020-02-27 11:26:50.863572 wsdl: have 1 part(s) to serialize using rpc/encoded
+2020-02-27 11:26:50.863586 wsdl: have 1 parameter(s) provided as arrayStruct to serialize
+2020-02-27 11:26:50.863601 wsdl: serializing part statement of type http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.863615 wsdl: calling serializeType w/named param
+2020-02-27 11:26:50.863634 wsdl: in serializeType: name=statement, type=http://localhost/panda-store/services/dbService.php:dbStatement, use=encoded, encodingStyle=, unqualified=qualified
+value=array(6) {
+  ["instruction"]=>
+  array(1) {
+    ["code"]=>
+    int(0)
+  }
+  ["tables"]=>
+  array(1) {
+    ["table"]=>
+    array(2) {
+      [0]=>
+      string(7) "product"
+      [1]=>
+      string(5) "users"
+    }
+  }
+  ["columns"]=>
+  array(2) {
+    [0]=>
+    string(6) "idUser"
+    [1]=>
+    string(12) "dateModified"
+  }
+  ["conditionalColumns"]=>
+  array(1) {
+    ["column"]=>
+    string(6) "idUser"
+  }
+  ["conditionalOperators"]=>
+  array(1) {
+    ["operator"]=>
+    string(1) "="
+  }
+  ["conditionalValues"]=>
+  array(1) {
+    ["value"]=>
+    string(1) "1"
+  }
+}
+2020-02-27 11:26:50.863663 wsdl: in serializeType: got a prefixed type: dbStatement, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863679 wsdl: in getTypeDef: type=dbStatement, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863695 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863712 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType dbStatement
+2020-02-27 11:26:50.863728 wsdl: in getTypeDef: found type dbStatement
+2020-02-27 11:26:50.863742 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(11) "dbStatement"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(6) {
+    ["instruction"]=>
+    array(3) {
+      ["name"]=>
+      string(11) "instruction"
+      ["type"]=>
+      string(59) "http://localhost/panda-store/services/dbService.php:tDbCode"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["tables"]=>
+    array(5) {
+      ["name"]=>
+      string(6) "tables"
+      ["type"]=>
+      string(63) "http://localhost/panda-store/services/dbService.php:tDbTables[]"
+      ["minOccurs"]=>
+      string(1) "1"
+      ["maxOccurs"]=>
+      string(9) "unbounded"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["columns"]=>
+    array(3) {
+      ["name"]=>
+      string(7) "columns"
+      ["type"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:tDbColumns"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalColumns"]=>
+    array(3) {
+      ["name"]=>
+      string(18) "conditionalColumns"
+      ["type"]=>
+      string(62) "http://localhost/panda-store/services/dbService.php:tDbColumns"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalOperators"]=>
+    array(3) {
+      ["name"]=>
+      string(20) "conditionalOperators"
+      ["type"]=>
+      string(75) "http://localhost/panda-store/services/dbService.php:tDbConditionalOperators"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["conditionalValues"]=>
+    array(3) {
+      ["name"]=>
+      string(17) "conditionalValues"
+      ["type"]=>
+      string(72) "http://localhost/panda-store/services/dbService.php:tDbConditionalValues"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.863779 wsdl: in serializeType: uqType: dbStatement, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.863796 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.863810 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.863829 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.863843 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:dbStatement
+2020-02-27 11:26:50.863862 wsdl: in serializeType: name=instruction, type=http://localhost/panda-store/services/dbService.php:tDbCode, use=encoded, encodingStyle=, unqualified=unqualified
+value=array(1) {
+  ["code"]=>
+  int(0)
+}
+2020-02-27 11:26:50.863879 wsdl: in serializeType: got a prefixed type: tDbCode, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863897 wsdl: in getTypeDef: type=tDbCode, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863911 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.863926 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType tDbCode
+2020-02-27 11:26:50.863941 wsdl: in getTypeDef: found type tDbCode
+2020-02-27 11:26:50.863955 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(7) "tDbCode"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["code"]=>
+    array(3) {
+      ["name"]=>
+      string(4) "code"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.863977 wsdl: in serializeType: uqType: tDbCode, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.863991 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:tDbCode
+2020-02-27 11:26:50.864005 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:tDbCode
+2020-02-27 11:26:50.864020 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbCode
+2020-02-27 11:26:50.864034 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbCode
+2020-02-27 11:26:50.864052 wsdl: in serializeType: name=code, type=http://www.w3.org/2001/XMLSchema:int, use=encoded, encodingStyle=, unqualified=unqualified
+value=int(0)
+2020-02-27 11:26:50.864068 wsdl: in serializeType: got a prefixed type: int, http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864082 wsdl: in serializeType: type namespace indicates XML Schema or SOAP Encoding type
+2020-02-27 11:26:50.864102 wsdl: in getTypeDef: type=int, ns=http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864118 wsdl: in getTypeDef: do not have schema for namespace http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864134 wsdl: in serializeType: returning: <code xsi:type="xsd:int">0</code>
+2020-02-27 11:26:50.864150 wsdl: in serializeType: returning: <instruction xmlns="" xsi:type="tns:tDbCode"><code xsi:type="xsd:int">0</code></instruction>
+2020-02-27 11:26:50.864167 wsdl: in serializeType: name=tables, type=http://localhost/panda-store/services/dbService.php:tDbTables[], use=encoded, encodingStyle=, unqualified=unqualified
+value=array(1) {
+  ["table"]=>
+  array(2) {
+    [0]=>
+    string(7) "product"
+    [1]=>
+    string(5) "users"
+  }
+}
+2020-02-27 11:26:50.864185 wsdl: in serializeType: got a prefixed type: tDbTables[], http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864199 wsdl: in getTypeDef: type=tDbTables[], ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864213 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864262 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, did not find tDbTables[]
+2020-02-27 11:26:50.864277 wsdl: in getTypeDef: did not find type tDbTables[]
+2020-02-27 11:26:50.864292 wsdl: in serializeType: http://localhost/panda-store/services/dbService.php:tDbTables[] (tDbTables[]) is not a supported type.
+2020-02-27 11:26:50.864308 wsdl: in serializeType: name=columns, type=http://localhost/panda-store/services/dbService.php:tDbColumns, use=encoded, encodingStyle=, unqualified=unqualified
+value=array(2) {
+  [0]=>
+  string(6) "idUser"
+  [1]=>
+  string(12) "dateModified"
+}
+2020-02-27 11:26:50.864326 wsdl: in serializeType: got a prefixed type: tDbColumns, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864341 wsdl: in getTypeDef: type=tDbColumns, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864355 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864369 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType tDbColumns
+2020-02-27 11:26:50.864384 wsdl: in getTypeDef: found type tDbColumns
+2020-02-27 11:26:50.864397 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(10) "tDbColumns"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["column"]=>
+    array(3) {
+      ["name"]=>
+      string(6) "column"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.864419 wsdl: in serializeType: uqType: tDbColumns, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.864433 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864446 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864463 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864477 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864492 wsdl: no value provided for complexType element column and element is not nillable, so serialize nothing
+2020-02-27 11:26:50.864506 wsdl: in serializeType: returning: <columns xmlns="" xsi:type="tns:tDbColumns"></columns>
+2020-02-27 11:26:50.864522 wsdl: in serializeType: name=conditionalColumns, type=http://localhost/panda-store/services/dbService.php:tDbColumns, use=encoded, encodingStyle=, unqualified=unqualified
+value=array(1) {
+  ["column"]=>
+  string(6) "idUser"
+}
+2020-02-27 11:26:50.864538 wsdl: in serializeType: got a prefixed type: tDbColumns, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864553 wsdl: in getTypeDef: type=tDbColumns, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864566 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864581 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType tDbColumns
+2020-02-27 11:26:50.864595 wsdl: in getTypeDef: found type tDbColumns
+2020-02-27 11:26:50.864608 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(10) "tDbColumns"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["column"]=>
+    array(3) {
+      ["name"]=>
+      string(6) "column"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.864630 wsdl: in serializeType: uqType: tDbColumns, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.864644 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864657 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864672 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864686 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbColumns
+2020-02-27 11:26:50.864701 wsdl: in serializeType: name=column, type=http://www.w3.org/2001/XMLSchema:string, use=encoded, encodingStyle=, unqualified=unqualified
+value=string(6) "idUser"
+2020-02-27 11:26:50.864717 wsdl: in serializeType: got a prefixed type: string, http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864731 wsdl: in serializeType: type namespace indicates XML Schema or SOAP Encoding type
+2020-02-27 11:26:50.864750 wsdl: in getTypeDef: type=string, ns=http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864764 wsdl: in getTypeDef: do not have schema for namespace http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.864779 wsdl: in serializeType: returning: <column xsi:type="xsd:string">idUser</column>
+2020-02-27 11:26:50.864794 wsdl: in serializeType: returning: <conditionalColumns xmlns="" xsi:type="tns:tDbColumns"><column xsi:type="xsd:string">idUser</column></conditionalColumns>
+2020-02-27 11:26:50.864808 wsdl: in serializeType: name=conditionalOperators, type=http://localhost/panda-store/services/dbService.php:tDbConditionalOperators, use=encoded, encodingStyle=, unqualified=unqualified
+value=array(1) {
+  ["operator"]=>
+  string(1) "="
+}
+2020-02-27 11:26:50.864825 wsdl: in serializeType: got a prefixed type: tDbConditionalOperators, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864842 wsdl: in getTypeDef: type=tDbConditionalOperators, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864856 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.864870 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType tDbConditionalOperators
+2020-02-27 11:26:50.864885 wsdl: in getTypeDef: found type tDbConditionalOperators
+2020-02-27 11:26:50.864898 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(23) "tDbConditionalOperators"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["operator"]=>
+    array(3) {
+      ["name"]=>
+      string(8) "operator"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.864920 wsdl: in serializeType: uqType: tDbConditionalOperators, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.864934 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalOperators
+2020-02-27 11:26:50.864948 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalOperators
+2020-02-27 11:26:50.864963 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalOperators
+2020-02-27 11:26:50.864977 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalOperators
+2020-02-27 11:26:50.864992 wsdl: in serializeType: name=operator, type=http://www.w3.org/2001/XMLSchema:string, use=encoded, encodingStyle=, unqualified=unqualified
+value=string(1) "="
+2020-02-27 11:26:50.865008 wsdl: in serializeType: got a prefixed type: string, http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865022 wsdl: in serializeType: type namespace indicates XML Schema or SOAP Encoding type
+2020-02-27 11:26:50.865037 wsdl: in getTypeDef: type=string, ns=http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865069 wsdl: in getTypeDef: do not have schema for namespace http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865084 wsdl: in serializeType: returning: <operator xsi:type="xsd:string">=</operator>
+2020-02-27 11:26:50.865099 wsdl: in serializeType: returning: <conditionalOperators xmlns="" xsi:type="tns:tDbConditionalOperators"><operator xsi:type="xsd:string">=</operator></conditionalOperators>
+2020-02-27 11:26:50.865114 wsdl: in serializeType: name=conditionalValues, type=http://localhost/panda-store/services/dbService.php:tDbConditionalValues, use=encoded, encodingStyle=, unqualified=unqualified
+value=array(1) {
+  ["value"]=>
+  string(1) "1"
+}
+2020-02-27 11:26:50.865131 wsdl: in serializeType: got a prefixed type: tDbConditionalValues, http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.865145 wsdl: in getTypeDef: type=tDbConditionalValues, ns=http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.865159 wsdl: in getTypeDef: have schema for namespace http://localhost/panda-store/services/dbService.php
+2020-02-27 11:26:50.865173 nusoap_xmlschema: <http://localhost/panda-store/services/dbService.php> in getTypeDef, found complexType tDbConditionalValues
+2020-02-27 11:26:50.865188 wsdl: in getTypeDef: found type tDbConditionalValues
+2020-02-27 11:26:50.865202 wsdl: in serializeType: found typeDef
+typeDef=array(6) {
+  ["name"]=>
+  string(20) "tDbConditionalValues"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(3) "all"
+  ["elements"]=>
+  array(1) {
+    ["value"]=>
+    array(3) {
+      ["name"]=>
+      string(5) "value"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+2020-02-27 11:26:50.865224 wsdl: in serializeType: uqType: tDbConditionalValues, ns: http://localhost/panda-store/services/dbService.php, phptype: struct, arrayType: 
+2020-02-27 11:26:50.865238 wsdl: serializeComplexTypeAttributes for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalValues
+2020-02-27 11:26:50.865251 wsdl: no attributes to serialize for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalValues
+2020-02-27 11:26:50.865266 wsdl: in serializeComplexTypeElements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalValues
+2020-02-27 11:26:50.865280 wsdl: in serializeComplexTypeElements, serialize elements for XML Schema type http://localhost/panda-store/services/dbService.php:tDbConditionalValues
+2020-02-27 11:26:50.865295 wsdl: in serializeType: name=value, type=http://www.w3.org/2001/XMLSchema:string, use=encoded, encodingStyle=, unqualified=unqualified
+value=string(1) "1"
+2020-02-27 11:26:50.865310 wsdl: in serializeType: got a prefixed type: string, http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865324 wsdl: in serializeType: type namespace indicates XML Schema or SOAP Encoding type
+2020-02-27 11:26:50.865358 wsdl: in getTypeDef: type=string, ns=http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865374 wsdl: in getTypeDef: do not have schema for namespace http://www.w3.org/2001/XMLSchema
+2020-02-27 11:26:50.865394 wsdl: in serializeType: returning: <value xsi:type="xsd:string">1</value>
+2020-02-27 11:26:50.865412 wsdl: in serializeType: returning: <conditionalValues xmlns="" xsi:type="tns:tDbConditionalValues"><value xsi:type="xsd:string">1</value></conditionalValues>
+2020-02-27 11:26:50.865431 wsdl: in serializeType: returning: <statement xsi:type="tns:dbStatement"><instruction xmlns="" xsi:type="tns:tDbCode"><code xsi:type="xsd:int">0</code></instruction><columns xmlns="" xsi:type="tns:tDbColumns"></columns><conditionalColumns xmlns="" xsi:type="tns:tDbColumns"><column xsi:type="xsd:string">idUser</column></conditionalColumns><conditionalOperators xmlns="" xsi:type="tns:tDbConditionalOperators"><operator xsi:type="xsd:string">=</operator></conditionalOperators><conditionalValues xmlns="" xsi:type="tns:tDbConditionalValues"><value xsi:type="xsd:string">1</value></conditionalValues></statement>
+2020-02-27 11:26:50.865449 wsdl: serializeRPCParameters returning: <statement xsi:type="tns:dbStatement"><instruction xmlns="" xsi:type="tns:tDbCode"><code xsi:type="xsd:int">0</code></instruction><columns xmlns="" xsi:type="tns:tDbColumns"></columns><conditionalColumns xmlns="" xsi:type="tns:tDbColumns"><column xsi:type="xsd:string">idUser</column></conditionalColumns><conditionalOperators xmlns="" xsi:type="tns:tDbConditionalOperators"><operator xsi:type="xsd:string">=</operator></conditionalOperators><conditionalValues xmlns="" xsi:type="tns:tDbConditionalValues"><value xsi:type="xsd:string">1</value></conditionalValues></statement>
+2020-02-27 11:26:50.865488 nusoap_client: got wsdl error: http://localhost/panda-store/services/dbService.php:tDbTables[] (tDbTables[]) is not a supported type.
+  
