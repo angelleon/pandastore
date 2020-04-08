@@ -1,7 +1,0 @@
-{
-    "require": {
-        "codecasts/nusoap-php7": "^0.9.7",
-        "monolog/monolog": "^2.0",
-        "illuminate/database": "^6.16"
-    }
-}
