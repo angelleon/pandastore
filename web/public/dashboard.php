@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__."/util.php";
-    include_once __DIR__."/navbar.php";
+    require_once __DIR__."/../libs/Url.php";
+    require_once __DIR__."/../libs/view/navbar.php";
 
-    include_once __DIR__."/footer.php";
+    require_once __DIR__."/../libs/view/footer.php";

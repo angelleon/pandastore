@@ -1,6 +1,5 @@
 function validateLoginData() {
     console.log("validating data");
-    debugger;
     let txtInputEmail = document.getElementById("txtEmail");
     let txtInputPasswd = document.getElementById("txtPasswd");
     if (txtInputEmail && txtInputPasswd) {
@@ -8,7 +7,6 @@ function validateLoginData() {
         let passwd = txtInputPasswd.value;
         if (passwd.length < 8) {
             txtInputPasswd.classList.add("is-danger");
-            debugger;
             return false;
         }
         if (document.frmLogin) {
@@ -20,7 +18,6 @@ function validateLoginData() {
 
 function validateSingupData() {
     console.log("validating singup data");
-    //debugger;
     let txtGivenName = document.getElementById("txtName");
     let txtSurname = document.getElementById("txtSuraname");
     let txtPasswd = document.getElementById("txtPasswd");

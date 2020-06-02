@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__."/navbar.php";
+    require_once __DIR__."/../libs/view/navbar.php";
     ?>
 
     <form name="productForm" method="POST" enctype="multipart/form-data" action="./services/productManagerService.php">
@@ -12,4 +12,4 @@
     </form>
 
 <?php
-    require_once __DIR__."footer.php";
+    require_once __DIR__."/../libs/view/footer.php";

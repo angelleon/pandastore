@@ -17,7 +17,7 @@
 
         } else if ($_POST["operation"] == $RM_PRODUCT) {
 
-        } else if ($_PSOT["operation"] == $LS_PRODUCT) {
+        } else if ($_POST["operation"] == $LS_PRODUCT) {
 
         }
 
